@@ -1,0 +1,15 @@
+<section class="notes-section">
+  <app-note-form-edit *ngIf="ifEdit"></app-note-form-edit>
+  <div class="notes-list">
+    <app-note (click)="detectClick(note.id, i)" *ngFor="let note of notes | filter: searchInput; index as i"
+               [headline]="note.headline"
+              [text]="note.text"
+              [tags]="note.tags" [id]="note.id"></app-note>
+    <app-note-form *ngIf="ifMake"></app-note-form>
+    <button *ngIf="!ifMake" class="button-add" (click)="makeNote()">
+      <span class="button-add-circle">
+        <img src="assets/img/plus.svg" alt="plus">
+      </span>
+    </button>
+  </div>
+</section>

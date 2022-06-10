@@ -1,0 +1,44 @@
+@import "src/variables"
+
+.note
+  &-form
+    background-color: $beige
+    padding: 10px
+    border-radius: 10px
+    height: 100%
+    width: 100%
+    position: relative
+  &-input
+    width: 100%
+    font-size: 20px
+    padding-left: 10px
+    margin-top: 10px
+    background-color: $beige
+    &-headline
+      font-size: 48px
+      font-weight: 700
+      text-transform: capitalize
+      margin-bottom: 16px
+    &-text
+      font-size: 18px
+      margin-bottom: 32px
+      resize: none
+  &-confirm
+    display: inline-block
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-color: inherit
+    cursor: pointer
+  &-cancel
+    display: inline-block
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-color: inherit
+    cursor: pointer
+    margin-right: 10px
+.buttons
+  position: absolute
+  bottom: 10px
+  right: 10px

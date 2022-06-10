@@ -1,0 +1,39 @@
+@import "src/variables"
+
+.note
+  background-color: $beige
+  border-radius: 7px
+  padding: 10px
+  position: relative
+  &-headline
+    font-size: 48px
+    font-weight: 700
+    text-transform: capitalize
+    margin-bottom: 16px
+  &-text
+    font-size: 18px
+    margin-bottom: 32px
+  &-tags
+    list-style: none
+  &-tag
+    display: inline-block
+    margin-right: 10px
+    font-weight: 300
+  &-active
+    border: 2px solid $red
+
+.button
+  &-delete
+    width: 20px
+    height: 20px
+    position: absolute
+    right: 10px
+    top: 10px
+    cursor: pointer
+  &-edit
+    width: 20px
+    height: 20px
+    position: absolute
+    right: 10px
+    bottom: 10px
+    cursor: pointer

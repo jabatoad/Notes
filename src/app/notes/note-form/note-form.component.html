@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="makeNote()" class="note-form">
+  <input class="note-input note-input-headline" formControlName="headlineControl" type="text"
+         placeholder="Headline">
+  <textarea class="note-input note-input-text" formControlName="textControl" type="text" placeholder="Text"></textarea>
+  <div class="buttons">
+    <button type="text" class="note-cancel" (click)="cancel()">
+      <img src="assets/img/cancel.svg" alt="cancel">
+    </button>
+    <button type="submit" class="note-confirm" [disabled]="form.invalid">
+      <img src="assets/img/accept.svg" alt="confirm">
+    </button>
+  </div>
+</form>

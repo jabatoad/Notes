@@ -1,0 +1,9 @@
+<div class="note">
+  <h2 class="note-headline">{{headline}}</h2>
+  <p class="note-text">{{text}}</p>
+  <ul class="note-tags">
+    <li class="note-tag" *ngFor="let tag of tags">#{{tag}}</li>
+  </ul>
+  <img src="assets/img/delete.svg" class="button-delete" alt="delete" (click)="deleteNote()">
+  <img src="assets/img/edit.svg" alt="edit" class="button-edit" (click)="editNote()">
+</div>
